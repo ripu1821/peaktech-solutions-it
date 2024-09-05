@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>IT Company Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="IT Company Website Template" name="keywords">
+    <meta content="IT Company Website Template" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Libraries CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Nav Start -->
+    <div id="nav">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                <a href="index.html" class="navbar-brand">
+                    <img src="img/logo.png" alt="Logo">
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a id="signOutBtn" style="color: red; cursor: pointer"  class="nav-item nav-link">Logout </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Nav End -->
+
+   </header>
+   <!-- header section -->
+
+   <div class="admin">
+      <div class="form-container" id="content">
+         <div id="employeeDetails">
+            <!-- Add Employee Form -->
+            <div class="container text-center" id="addEmployeeForm">
+               <h1>Add New</h1>
+               <div>
+                  <input class="form-input-field" value="" type="text" id="employeeName" placeholder="Employee Name">
+               </div>
+               <div>
+                  <input class="form-input-field" value="" type="text" id="employeeRole" placeholder="Employee Role">
+               </div>
+               <div>
+                  <button class="add-btn" id="addEmployeeBtn">Add Employee</button>
+               </div>
+            </div>
+            <!-- Employee List -->
+            <div class="container list-section">
+               <div class="section-header">
+                  <h1>Our Team</h1>
+               </div>
+               <div id="addEmployeeBtn">
+                  <div class="list-row" id="employeeTableBody"></div>
+               </div>
+            </div>
+            <!-- Model for update -->
+            <div id="myModal" class="modal">
+               <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <label for="name">Name:</label>
+                  <input class="update-field" type="text" id="name">
+                  <label for="role">Role:</label>
+                  <input class="update-field" type="text" id="role">
+                  <button class="update-btn" id="updateBtn">Update</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div id="loginFormdiv" class="login-container">
+         <h2 class="login-h2">Login</h2>
+         <div class="input-container">
+            <i class="fa fa-envelope"></i>
+            <input class="login-input" type="text" id="username" placeholder="Username" value="">
+         </div>
+         <div class="input-container">
+            <i class="fa fa-lock"></i>
+            <input class="login-input" type="text" id="password" placeholder="Password" value="">
+         </div>
+         <button class="login-button" id="signInBtn">Sign In</button>
+      </div>
+   </div>
+
+
+   <div class="footer">
+      <div class="footer-top">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6 footer-links">
+                      <h1 style="color: #ffffff;">
+                          PEAKTECH SOLUTIONS
+                          IT EXCELLENCE IN EVERY BYTE
+                      </h1>
+                  </div>
+                  <div class="col-lg-4 col-md-6 footer-contact">
+                      <h4>Contact Us</h4>
+                      <p>
+                          1-B-12, Mahaveer Nagar,<br>
+                          Kota-Rajasthan<br>
+                          India - 324005 <br>
+                          <strong>Phone:</strong> <a style="color: white;" href="tel:+919950527000">+91
+                              9950527000</a><br>
+                          <strong>Email:</strong> <a style="color: white;"
+                              href="mailto:hello@reallygreatsite.com">hello@reallygreatsite.com</a><br>
+
+                      </p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 footer-links">
+                      <h4>Links</h4>
+                      <ul>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="index.html">Home</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="about.html">About us</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="service.html">Our services</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="team.html">Team</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="client.html">Client</a></li>
+                          <li><i class="ion-ios-arrow-forward"></i> <a href="contact.html">Contact</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Footer End -->
+
+  <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+
+  <!-- Libraries JS -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Main Javascript -->
+  <script src="js/main.js"></script>
+   <!-- Custom js -->
+   <script src="js/script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+   <script src="Auth.js"></script>
+</body>
+
+</html>
